@@ -1,0 +1,32 @@
+body {
+  margin: 0; /* 브라우저 기본 margin 제거 → 여백 없음 */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; /* 시스템 기본 폰트 → mac, windows, 리눅스 등 다양한 OS 폰트 적용 */
+  -webkit-font-smoothing: antialiased; /* 웹킷(크롬, 사파리) 글자 부드럽게 렌더링 */
+  -moz-osx-font-smoothing: grayscale;  /* 파이어폭스(OSX) 글자 부드럽게 렌더링 */
+  box-sizing: border-box; /* 기본 박스모델 → border까지 포함해서 width/height 계산 */
+  min-height: 100%; /* 화면 높이에 최소 100% 맞추기 */
+}
+
+#root {
+  min-height: 100%; /* 리액트 앱의 루트 요소도 화면 100% 차지 */
+}
+
+html {
+  height: 100%; /* HTML 전체 높이 100% → body와 root에 전달 */
+}
+
+a {
+  color: inherit; /* 링크(a)의 색상을 부모 요소에서 상속 → 깔끔하게 */
+  text-decoration: none; /* 링크 밑줄 제거 */
+}
+
+* {
+  box-sizing: inherit; /* body에서 지정한 border-box를 모든 요소에 상속 → width 계산 편리 */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; /* 코드 블럭에 monospaced(고정폭) 폰트 적용 */
+}
